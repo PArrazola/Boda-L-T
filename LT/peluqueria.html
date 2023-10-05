@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Peluquería</title>
+
+    <!--link css de boostrap 5.3-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+
+    <!--link JS de bootstrap 5.3-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"></script>
+
+    <!--link hoja estilos css-->
+    <link rel="stylesheet" href="LyTstyles.css" />
+
+    <!--link font awesome-->
+    <script
+      src="https://kit.fontawesome.com/015dbbf443.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body style="background-color: rgb(243, 243, 210)">
+    <nav
+      class="navbar navbar-expand-lg textbordenav"
+      style="border-radius: 10px">
+      <div class="container-fluid">
+        <!--👋 añadir en el href el mismo id que el div al que quiero moverme👋-->
+        <a class="navbar-brand boton" href="./index.html">¡Nuestra Boda!</a>
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-white"
+          id="navbarNavDropdown"
+          style="background-color: rgba(25, 27, 22, 0.74); border-radius: 10px">
+          <ul class="navbar-nav text-white">
+            <li class="nav-item">
+              <a
+                class="nav-link boton text-white"
+                aria-current="page"
+                href="./index.html"
+                >Celebración</a
+              >
+              <!--👋 añadir en el href el mismo id que el div al que quiero moverme👋-->
+            </li>
+            <li class="nav-item text-white">
+              <a class="nav-link boton text-white" href="./regalo.html"
+                >Regalo</a
+              >
+              <!--👋 añadir en el href el mismo id que el div al que quiero moverme👋-->
+            </li>
+            <li class="nav-item dropdown text-white">
+              <a
+                class="nav-link active dropdown-toggle boton text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Encuentra
+              </a>
+              <ul class="dropdown-menu dropmenu text-white">
+                <li>
+                  <a
+                    class="dropdown-item boton text-white"
+                    style="
+                      background-color: rgba(25, 27, 22, 0.9);
+                      border-radius: 10px;
+                    "
+                    href="alojamiento.html"
+                    target="_blank"
+                    >Alojamiento</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item boton text-white"
+                    style="
+                      background-color: rgba(25, 27, 22, 0.9);
+                      border-radius: 10px;
+                    "
+                    href="peluqueria.html"
+                    target="_blank"
+                    >Peluquería</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item text-white"
+                    href="./hostelería.html"
+                    style="
+                      background-color: rgba(25, 27, 22, 0.9);
+                      border-radius: 10px;
+                    "
+                    >Hostelería</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-dark rounded-pill"
+                href="confirma.html"
+                target="_blank"
+                >Confirmar Asistencia</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="row justify-content-center fila">
+        <div class="col-3 pe-0">
+          <img
+            src="./imagenes/primer-plano-vertical-flores-hortensia-rosa-plena-floracion.png"
+            alt="margaritas"
+            height="90%"
+            width="100%" />
+        </div>
+        <div class="col-3 ps-0 pe-0">
+          <img
+            src="./imagenes/primer-plano-vertical-flores-hortensia-rosa-plena-floracion.png"
+            alt="margaritas"
+            height="90%"
+            width="100%" />
+        </div>
+        <div class="col-3 ps-0">
+          <img
+            src="./imagenes/primer-plano-vertical-flores-hortensia-rosa-plena-floracion.png"
+            alt="margaritas"
+            height="90%"
+            width="100%" />
+        </div>
+        <div class="col-3 ps-0">
+          <img
+            src="./imagenes/primer-plano-vertical-flores-hortensia-rosa-plena-floracion.png"
+            alt="margaritas"
+            height="90%"
+            width="100%" />
+        </div>
+      </div>
+      <div class="row justify-content-start m-3">
+        <div
+          class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+          style="word-wrap: break-word">
+          <h1>Peluquerías en Granada</h1>
+          <h3 class="ms-5 mt-5">Recomendamos..</h3>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario fila"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Peluquería Fernando Caras</h5>
+              <div class="row">
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2">
+                  Calle Recogidas, 47, 18005 Granada
+                  <hr />
+                  <ul>
+                    <li>https://fernandocara.com/</li>
+                    <li>958251751</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/2yFVdAg6KCwh9aro7"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.236160918544!2d-3.6066096854916485!3d37.17085825444808!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fc96fa4b1b19%3A0x88c3aacda46d13e9!2sPeluquer%C3%ADa%20Fernando%20Cara!5e0!3m2!1ses!2ses!4v1677674468277!5m2!1ses!2ses"
+                    width="100%"
+                    height="100%"
+                    allowfullscreen=""
+                    style="border-radius: 10px"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">
+                Peluquería BS Estilistas (Beatriz Suarez)
+              </h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle Mulhacén, 5, 18005 Granada
+                  <hr />
+                  <ul>
+                    <li>958251848</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/xPbABaLK8JJWib4b9"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.2940024063532!2d-3.603538785491641!3d37.16948345452617!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbd63bf7403%3A0xa25501bd2b179b7c!2sBS%20Estilistas%20(Beatriz%20Suarez)!5e0!3m2!1ses!2ses!4v1677674617940!5m2!1ses!2ses"
+                    width="100%"
+                    height="100%"
+                    allowfullscreen=""
+                    style="border-radius: 10px"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">
+                Peluquería Matizzes | Salón de Belleza en Granada
+              </h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Cam. de Rda., 104, 18004 Granada
+                  <hr />
+                  <ul>
+                    <li>https://www.instagram.com/matizzesbeauty/</li>
+                    <li>958814905</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/1Nx4qksxAuWP64BT7"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.1389773760657!2d-3.609624685491535!3d37.17316805431696!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fc93e22fd2e5%3A0x6413e6150db1c807!2sPeluquer%C3%ADa%20Matizzes%20%7C%20Sal%C3%B3n%20de%20Belleza%20en%20Granada!5e0!3m2!1ses!2ses!4v1677674709415!5m2!1ses!2ses"
+                    width="100%"
+                    height="100%"
+                    allowfullscreen=""
+                    style="border-radius: 10px"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Duo Peluqueros</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  C. Recogidas, 19, 18005 Granada
+                  <hr />
+                  <ul>
+                    <li>https://duopeluqueros.es/</li>
+                    <li>958266810</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/DWKfJpFZC73VXViXA"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.185409476975!2d-3.606163281902686!3d37.17206449944512!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fc961bc96789%3A0x44a854b736b16a3d!2sDuo%20Peluqueros!5e0!3m2!1ses!2ses!4v1677674796504!5m2!1ses!2ses"
+                    width="100%"
+                    height="100%"
+                    allowfullscreen=""
+                    style="border-radius: 10px"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Snap Stylists</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle San Matías, 15, 18009 Granada
+                  <hr />
+                  <ul>
+                    <li>958210490</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/94ZehNoKeniB2Ac87"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.125054520616!2d-3.599073585491547!3d37.1734989542983!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbea93d1205%3A0x8599d746118a5235!2sSnap%20Stylists!5e0!3m2!1ses!2ses!4v1677674877276!5m2!1ses!2ses"
+                    width="100%"
+                    height="100%"
+                    allowfullscreen=""
+                    style="border-radius: 10px"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

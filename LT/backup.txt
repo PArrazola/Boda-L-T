@@ -1,0 +1,57 @@
+<div class=" header-container">
+        <h1>Loreto e Ignacio 23 de Septiembre de 2023</h1>
+
+        <p>
+          Enrique García-Trevijano Nestares <br />
+          Loreto Cabetas García
+        </p>
+        <p>
+          Enrique Pinazo Tobes <br />
+          Coro Petit Asumendi
+        </p>
+      </div>
+
+
+      .header-container {
+  position: absolute;
+  top: 65%;
+  left: -5%;
+  width: 100%;
+  text-align: end;
+  transform: translateY(-50%);
+  height: 100%;
+  /*Settheheader-containerheightto100%oftheheader*/
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+
+.header h1,
+.header h3 {
+  max-height: 15%;
+}
+
+.header {
+  text-align: end;
+
+  text-shadow: 2px 2px 2px #000;
+  background-image: url(./imagenes/IMG_4434.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+
+  background-position: center;
+  position: relative;
+  padding: 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    background-size: contain;
+    background-position: center top;
+  }
+}

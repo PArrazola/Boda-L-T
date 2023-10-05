@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Peluquería</title>
+
+    <!--link css de boostrap 5.3-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+
+    <!--link JS de bootstrap 5.3-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"></script>
+
+    <!--link hoja estilos css-->
+    <link rel="stylesheet" href="LyTstyles.css" />
+
+    <!--link font awesome-->
+    <script
+      src="https://kit.fontawesome.com/015dbbf443.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body style="background-color: rgb(243, 243, 210)">
+    <nav
+      class="navbar navbar-expand-lg textbordenav"
+      style="border-radius: 10px">
+      <div class="container-fluid">
+        <!--👋 añadir en el href el mismo id que el div al que quiero moverme👋-->
+        <a class="navbar-brand boton" href="./index.html">¡Nuestra Boda!</a>
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-white"
+          id="navbarNavDropdown"
+          style="background-color: rgba(25, 27, 22, 0.74); border-radius: 10px">
+          <ul class="navbar-nav text-white">
+            <li class="nav-item">
+              <a
+                class="nav-link boton text-white"
+                aria-current="page"
+                href="./index.html"
+                >Celebración</a
+              >
+              <!--👋 añadir en el href el mismo id que el div al que quiero moverme👋-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link boton text-white" href="./regalo.html"
+                >Regalo</a
+              >
+              <!--👋 añadir en el href el mismo id que el div al que quiero moverme👋-->
+            </li>
+            <li class="nav-item dropdown text-white">
+              <a
+                class="nav-link active dropdown-toggle boton text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Encuentra
+              </a>
+              <ul class="dropdown-menu dropmenu text-white">
+                <li>
+                  <a
+                    class="dropdown-item boton text-white"
+                    style="
+                      background-color: rgba(25, 27, 22, 0.9);
+                      border-radius: 10px;
+                    "
+                    href="alojamiento.html"
+                    target="_blank"
+                    >Alojamiento</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item boton text-white"
+                    style="
+                      background-color: rgba(25, 27, 22, 0.9);
+                      border-radius: 10px;
+                    "
+                    href="peluqueria.html"
+                    target="_blank"
+                    >Peluquería</a
+                  >
+                </li>
+                <li class="text-white">
+                  <a
+                    class="dropdown-item text-white active"
+                    href="./hostelería.html"
+                    style="
+                      background-color: rgba(25, 27, 22, 0.9);
+                      border-radius: 10px;
+                    "
+                    >Hostelería</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-dark rounded-pill"
+                href="confirma.html"
+                target="_blank"
+                >Confirmar Asistencia</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <header>
+      <div class="row justify-content-center fila">
+        <div class="col-3 pe-0">
+          <img
+            src="./imagenes/hermosa-flor-flor-hortensia-blanca-cremosa-lavanda.png"
+            alt="margaritas"
+            height="90%"
+            width="100%" />
+        </div>
+        <div class="col-3 ps-0 pe-0">
+          <img
+            src="./imagenes/hermosa-flor-flor-hortensia-blanca-cremosa-lavanda.png"
+            alt="margaritas"
+            height="90%"
+            width="100%" />
+        </div>
+        <div class="col-3 ps-0">
+          <img
+            src="./imagenes/hermosa-flor-flor-hortensia-blanca-cremosa-lavanda.png"
+            alt="margaritas"
+            height="90%"
+            width="100%" />
+        </div>
+        <div class="col-3 ps-0">
+          <img
+            src="./imagenes/hermosa-flor-flor-hortensia-blanca-cremosa-lavanda.png"
+            alt="margaritas"
+            height="90%"
+            width="100%" />
+        </div>
+      </div>
+      <div class="row justify-content-start m-3">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario">
+          <h1>Hostelería de Granada</h1>
+          <h3 class="ms-5 mt-5">Recomendamos..</h3>
+
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario fila"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Los Diamantes</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Tapas por el centro
+                  <hr />
+                  <ul>
+                    <li>http://www.barlosdiamantes.com/</li>
+                    <li>Varios locales</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="http://www.barlosdiamantes.com/"
+                    >Reserva</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Biloba</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Restaurante
+                  <hr />
+                  <ul>
+                    <li>http://www.restaurantebiloba.com/</li>
+                    <li>Pl. del Campillo Bajo, 10, 18009 Granada</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="http://www.restaurantebiloba.com/"
+                    >Reserva</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">La Botillería</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Restaurante
+                  <hr />
+                  <ul>
+                    <li>http://www.labotilleriagranada.es/</li>
+                    <li>C. Varela, 10, 18009 Granada</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="http://www.labotilleriagranada.es/"
+                    >Reserva</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Bar Aliatar</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Bar tradicional - Bocadillos
+                  <hr />
+                  <ul>
+                    <li>https://bar-aliatar.es/</li>
+                    <li>Varios locales</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://bar-aliatar.es/"
+                    >Reserva</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">La Esquinita de Javi</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Tapas por el centro - Pescaito
+                  <hr />
+                  <ul>
+                    <li>https://laesquinitadejavi.es/</li>
+                    <li>Varios locales</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://laesquinitadejavi.es/"
+                    >Reserva</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">La Bodeguita</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Tapas por el centro
+                  <hr />
+                  <ul>
+                    <li>
+                      https://website--1618721794509477788145-bar.negocio.site/?m=true#gallery
+                    </li>
+                    <li>C. Raya, 3, 18015 Granada</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://website--1618721794509477788145-bar.negocio.site/?m=true#gallery"
+                    >Reserva</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">San Remo</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Tapas por el centro
+                  <hr />
+                  <ul>
+                    <li>958266260</li>
+                    <li>C. Puente de Castañeda, 9, 18005 Granada</li>
+                  </ul>
+
+                  <a class="btn btn-dark rounded-pill" href="Tel:958266260"
+                    >Reserva</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Rincón de Rodri</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Tapas por el centro - Pescaito
+                  <hr />
+                  <ul>
+                    <li>958522817</li>
+                    <li>C. Músico Vicente Zarzo, 3, 18002 Granada</li>
+                  </ul>
+
+                  <a class="btn btn-dark rounded-pill" href="Tel:958522817"
+                    >Reserva</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Bar Hoces</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Tapas por el centro
+                  <hr />
+                  <ul>
+                    <li>858136070</li>
+                    <li>C. Andorra, 1, 18009 Granada</li>
+                  </ul>
+
+                  <a class="btn btn-dark rounded-pill" href="Tel:858136070"
+                    >Reserva</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Poetas Andaluces</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Restaurante
+                  <hr />
+                  <ul>
+                    <li>https://www.poetasandaluces.es/</li>
+                    <li>C. Pedro Antonio de Alarcón, 43, 18002 Granada</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://www.poetasandaluces.es/"
+                    >Reserva</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Restaurante Marisquería Cunini</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Restaurante
+                  <hr />
+                  <ul>
+                    <li>958250777</li>
+                    <li>Pl. Pescadería, 14, 18001 Granada</li>
+                  </ul>
+
+                  <a class="btn btn-dark rounded-pill" href="Tel:958250777"
+                    >Reserva</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Bar FM</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Restaurante
+                  <hr />
+                  <ul>
+                    <li>https://www.facebook.com/BarFMGranada/</li>
+                    <li>Av. de Juan Pablo II, 54, 18013 Granada</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://www.facebook.com/BarFMGranada/"
+                    >Reserva</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Restaurante Pizzería Altamura</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Restaurante
+                  <hr />
+                  <ul>
+                    <li>https://altamura.es/carta/</li>
+                    <li>Av. de Andaluces, 2, 18014 Granada</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://altamura.es/carta/"
+                    >Reserva</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Damasqueseros</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Restaurante
+                  <hr />
+                  <ul>
+                    <li>http://www.damasqueros.com/</li>
+                    <li>C. Damasqueros, 3, 18009 Granada</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="http://www.damasqueros.com/"
+                    >Reserva</a
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

@@ -1,0 +1,124 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  height: 60px;
+  background-color: transparent !important;
+}
+
+.fecha {
+  font-size: 21px;
+}
+
+.textbordenav {
+  font-weight: 500;
+}
+
+.dropmenu {
+  background-color: transparent !important;
+}
+
+.boton:hover {
+  text-decoration: overline;
+}
+
+.fila {
+  background-color: beige;
+}
+.caja {
+  background: transparent;
+  box-shadow: 1px 1px 0.5px rgba(0, 0, 0, 0.385);
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+  margin: 0;
+}
+
+div > h1,
+h2,
+h3,
+h4,
+h5 {
+  color: rgb(36, 52, 36);
+}
+
+.fondoformulario {
+  background-image: url(../LT/imagenes/aangulo.png);
+  background-size: cover;
+  background-position: center;
+  background-size: 100%;
+  opacity: 0.9;
+}
+
+.formulario {
+  border-radius: 30px;
+  background-color: rgb(230, 230, 196);
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+}
+
+.cartas {
+  background-color: rgba(101, 100, 100, 0.326);
+}
+
+.cartaboda {
+  background-image: url(./imagenes/d3d9881f-53de-4bd9-8f6d-9eb5460fefc8.jpg);
+  background-size: cover;
+  background-position: center;
+  height: fit-content;
+}
+
+.parrafocartas {
+  color: white;
+}
+
+.cartapreboda {
+  background-image: url(./imagenes/cortijo.jpg);
+  background-size: cover;
+  background-position: center;
+  height: fit-content;
+}
+
+div > h6 {
+  color: black;
+}
+
+footer {
+  background-color: rgb(243, 243, 210);
+}
+
+* {
+  font-family: "optima";
+  color: rgb(36, 52, 36);
+}
+
+.active {
+  font-weight: 600;
+  font-size: larger;
+}
+
+div > label {
+  font-size: 15px;
+}
+
+.parrafointro {
+  font-size: 21px;
+
+  color: rgb(36, 52, 36);
+}
+
+.header {
+  text-align: end;
+  align-items: flex-end;
+  background-image: url(./imagenes/header.jpg);
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  height: 600px;
+}

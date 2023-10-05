@@ -1,0 +1,887 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Alojamientos</title>
+
+    <!--link css de boostrap 5.3-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+
+    <!--link JS de bootstrap 5.3-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"></script>
+
+    <!--link hoja estilos css-->
+    <link rel="stylesheet" href="LyTstyles.css" />
+
+    <!--link font awesome-->
+    <script
+      src="https://kit.fontawesome.com/015dbbf443.js"
+      crossorigin="anonymous"></script>
+  </head>
+  <body style="background-color: rgb(243, 243, 210)">
+    <nav
+      class="navbar navbar-expand-lg textbordenav"
+      style="border-radius: 10px">
+      <div class="container-fluid">
+        <!--👋 añadir en el href el mismo id que el div al que quiero moverme👋-->
+        <a class="navbar-brand boton" href="./index.html">¡Nuestra Boda!</a>
+        <button
+          class="navbar-toggler text-white"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse text-white"
+          id="navbarNavDropdown"
+          style="background-color: rgba(25, 27, 22, 0.74); border-radius: 10px">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link boton text-white"
+                aria-current="page"
+                href="./index.html"
+                >Celebración</a
+              >
+              <!--👋 añadir en el href el mismo id que el div al que quiero moverme👋-->
+            </li>
+            <li class="nav-item">
+              <a class="nav-link boton text-white" href="./regalo.html"
+                >Regalo</a
+              >
+              <!--👋 añadir en el href el mismo id que el div al que quiero moverme👋-->
+            </li>
+            <li class="nav-item dropdown text-white">
+              <a
+                class="nav-link active dropdown-toggle boton text-white"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Encuentra
+              </a>
+              <ul class="dropdown-menu dropmenu text-white">
+                <li>
+                  <a
+                    class="dropdown-item boton text-white"
+                    href="alojamiento.html"
+                    style="
+                      background-color: rgba(25, 27, 22, 0.9);
+                      border-radius: 10px;
+                    "
+                    target="_blank"
+                    >Alojamiento</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item boton text-white"
+                    href="peluqueria.html"
+                    style="
+                      background-color: rgba(25, 27, 22, 0.9);
+                      border-radius: 10px;
+                    "
+                    target="_blank"
+                    >Peluquería</a
+                  >
+                </li>
+                <li>
+                  <a
+                    class="dropdown-item boton text-white"
+                    href="./hostelería.html"
+                    style="
+                      background-color: rgba(25, 27, 22, 0.9);
+                      border-radius: 10px;
+                    "
+                    >Hostelería</a
+                  >
+                </li>
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a
+                class="btn btn-dark rounded-pill"
+                href="confirma.html"
+                target="_blank"
+                >Confirmar Asistencia</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <header>
+      <div class="row justify-content-center fila">
+        <div class="col-3 pe-0">
+          <img
+            src="./imagenes/closeup-foto-hermosa-flor-hortensia-serrata-hojas-verdes.png"
+            alt="margaritas"
+            height="90%"
+            width="100%" />
+        </div>
+        <div class="col-3 ps-0 pe-0">
+          <img
+            src="./imagenes/closeup-foto-hermosa-flor-hortensia-serrata-hojas-verdes.png"
+            alt="margaritas"
+            height="90%"
+            width="100%" />
+        </div>
+        <div class="col-3 ps-0">
+          <img
+            src="./imagenes/closeup-foto-hermosa-flor-hortensia-serrata-hojas-verdes.png"
+            alt="margaritas"
+            height="90%"
+            width="100%" />
+        </div>
+        <div class="col-3 ps-0">
+          <img
+            src="./imagenes/closeup-foto-hermosa-flor-hortensia-serrata-hojas-verdes.png"
+            alt="margaritas"
+            height="90%"
+            width="100%" />
+        </div>
+      </div>
+      <div class="row justify-content-start m-3">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario">
+          <h1>Alojamiento en Granada</h1>
+          <h3 class="ms-5 mt-5">Recomendamos..</h3>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario fila"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Hotel Saray Granada</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle Prof. Tierno Galván, 4, 18006 Granada
+                  <hr />
+                  <p>
+                    <b>¡Tenemos código promocional para vosotros!</b> Si no
+                    podéis utilizarlo contactadnos. Código:<b
+                      >BDLORETOIGNACIO</b
+                    >
+                  </p>
+                  <ul>
+                    <li>A 1,3 km andando de la iglesia</li>
+                    <li>A 2,3 km en coche de la iglesia</li>
+                    <li>https://www.hotelgranadasaray.com/</li>
+                    <li>958130009</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/YddooXTb8oKN9cct9"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.482183882447!2d-3.599570684699786!3d37.165010379875106!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fca39dfd1317%3A0x4ee2978ee9d4ac76!2sHotel%20Saray%20Granada!5e0!3m2!1ses!2ses!4v1681937635323!5m2!1ses!2ses"
+                    width="100%"
+                    height="100%"
+                    allowfullscreen=""
+                    style="border-radius: 10px"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario fila"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Hotel Porcel Navas</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle Navas, 22-24, 18009 Granada
+                  <hr />
+                  <ul>
+                    <li>A 400 m andando de la iglesia</li>
+                    <li>A 1,8 km en coche de la iglesia</li>
+                    <li>http://www.hotelnavas.com/</li>
+                    <li>958225959</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/TiFR9vAXUubdXNFU6"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.1193616452856!2d-3.6003400854915384!3d37.17363425429051!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fd9c404d25af%3A0xf28aa764d621ce3!2sPorcel%20Navas!5e0!3m2!1ses!2ses!4v1677671724573!5m2!1ses!2ses"
+                    width="100%"
+                    height="100%"
+                    allowfullscreen=""
+                    style="border-radius: 10px"
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Hotel Comfort Dauro 2</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle Navas, 5, 18009 Granada
+                  <hr />
+                  <ul>
+                    <li>A 300 m andando de la iglesia</li>
+                    <li>A 1,8 km en coche de la iglesia</li>
+                    <li>http://www.hotelcomfortdauro2.com/</li>
+                    <li>958221581</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/hfXJraCgy7T4e8wa6"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.1417333230906!2d-3.5993772854915087!3d37.17310255432074!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbc1cfc7bdf%3A0x1b2279c1ec6c2a54!2sHotel%20Comfort%20Dauro%202!5e0!3m2!1ses!2ses!4v1677672034753!5m2!1ses!2ses"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Hotel Párraga Siete</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle Párraga, 7, 18002 Granada
+                  <hr />
+                  <ul>
+                    <li>A 700 m andando de la iglesia</li>
+                    <li>A 900 m en coche de la iglesia</li>
+                    <li>http://www.hotelparragasiete.com/</li>
+                    <li>958264227</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/nJEEDZaP9gFVANHN7"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.1265061378786!2d-3.602983385491516!3d37.17346445430019!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbe0ed46ee5%3A0x148ff125d250ddd9!2sHotel%20P%C3%A1rraga%20Siete!5e0!3m2!1ses!2ses!4v1677672246138!5m2!1ses!2ses"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Hotel Molinos</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle Molinos, 12, 18009 Granada
+                  <hr />
+                  <ul>
+                    <li>A 200 m andando de la iglesia</li>
+                    <li>A 1 km en coche de la iglesia</li>
+                    <li>http://www.hotelmolinos.es/</li>
+                    <li>609392966</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/61rmYh92UJqXjz8j8"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.1332298456873!2d-3.595479885491528!3d37.17330465430927!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcba27e532c3%3A0x1bccba2d60bc4c08!2sHotel%20Molinos!5e0!3m2!1ses!2ses!4v1677672429163!5m2!1ses!2ses"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">La Tinaja del Realejo</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle Sta. Escolástica, 7, 18009 Granada
+                  <hr />
+                  <ul>
+                    <li>A 180 m andando de la iglesia</li>
+                    <li>A 600 m en coche de la iglesia</li>
+                    <li>https://latinajadelrealejo.com/</li>
+                    <li>958102636</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/aHpDhLRktkG2iKS69"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1715.4816575990474!2d-3.59814404189653!3d37.17434117201974!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcb96a38d477%3A0x36fd79ba39775dce!2sLa%20Tinaja%20del%20Realejo!5e0!3m2!1ses!2ses!4v1677672571037!5m2!1ses!2ses"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">4U Hostel</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle Coches de San Matias, 15, 18009 Granada
+                  <hr />
+                  <ul>
+                    <li>A 190 m andando de la iglesia</li>
+                    <li>A 2 km en coche de la iglesia</li>
+                    <li>https://www.hostel4ugranada.com/</li>
+                    <li>858887737</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/MFZPUMXtL7e3S8yU7"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.146521508204!2d-3.5981699854915266!3d37.1729887543271!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fde904e33351%3A0x1f5e402467876c68!2s4u%20Hostel!5e0!3m2!1ses!2ses!4v1677672878786!5m2!1ses!2ses"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Apartamentos Turísticos San Matias</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Pl. Abside de San Matias, 1, 18009 Granada
+                  <hr />
+                  <ul>
+                    <li>A 240 m andando de la iglesia</li>
+                    <li>A 2 km en coche de la iglesia</li>
+                    <li>http://www.apartamentossanmatias.com/</li>
+                    <li>678776118</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/81gcWbZLokkdN4Fd9"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.123737545126!2d-3.598868685491523!3d37.17353025429635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbeac00a813%3A0xd2914722586524d3!2sApartamentos%20Tur%C3%ADsticos%20San%20Mat%C3%ADas!5e0!3m2!1ses!2ses!4v1677673008965!5m2!1ses!2ses"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Apartamentos Turísticos San Pedro</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle San Pedro Mártir, 20, 18009 Granada
+                  <hr />
+                  <ul>
+                    <li>A 500 m andando de la iglesia</li>
+                    <li>A 1,6 km en coche de la iglesia</li>
+                    <li>
+                      https://www.hotelesibericos.com/apartamentos-san-pedro/
+                    </li>
+                    <li>958228124</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/NAHsqKQUMnXaVojf8"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.237747082091!2d-3.598800885491632!3d37.17082055445029!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbc7f241c9f%3A0x61b312f7836c3a17!2sApartamentos%20Tur%C3%ADsticos%20San%20Pedro!5e0!3m2!1ses!2ses!4v1677673106271!5m2!1ses!2ses"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Yit Casablanca</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle Frailes, 5, 18005 Granada
+                  <hr />
+                  <ul>
+                    <li>A 800 m andando de la iglesia</li>
+                    <li>A 1,7 km en coche de la iglesia</li>
+                    <li>http://www.hotelcasablancagranada.com/</li>
+                    <li>958257600</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/ENjxPH8b1Bc7g9Qu7"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.175216695702!2d-3.602766585491544!3d37.172306754365906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbde8b07af9%3A0x55172bc13f4af4c8!2sHotel%20YIT%20Casablanca!5e0!3m2!1ses!2ses!4v1677673191497!5m2!1ses!2ses"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Hotel Macià Monasterio de los Basilios</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  P.º de los Basilios, 2, 18008 Granada
+                  <hr />
+                  <ul>
+                    <li>A 900 m andando de la iglesia</li>
+                    <li>A 2,5 km en coche de la iglesia</li>
+                    <li>https://www.maciamonasterio.com/</li>
+                    <li>958817401</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/UX6R8qbPRJLKjFqV7"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.34350784712!2d-3.59742238549169!3d37.16830675459303!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbb364d155b%3A0x71501fc7ebe64786!2sHotel%20Maci%C3%A0%20Monasterio%20de%20Los%20Basilios!5e0!3m2!1ses!2ses!4v1677673289500!5m2!1ses!2ses"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Sercotel Palacio de los Gamboa</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 5 pb-2"
+                  style="word-wrap: break-word">
+                  Plaza de Gamboa, s/n esquina, C. Escudo del Carmen, 18009
+                  Granada
+                  <hr />
+                  <ul>
+                    <li>A 450 m andando de la iglesia</li>
+                    <li>A 800 m en coche de la iglesia</li>
+                    <li>
+                      https://www.sercotelhoteles.com/es/hotel-sercotel-palacio-de-los-gamboa
+                    </li>
+                    <li>958215323</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/AQqSivGLM9j4Poxe7"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.09036073281!2d-3.601953781902059!3d37.17432349931568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbe96407869%3A0xb265b61b9925c93f!2sSercotel%20Palacio%20de%20los%20Gamboa!5e0!3m2!1ses!2ses!4v1677673401673!5m2!1ses!2ses"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Eurostars Puerta Real</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle Acera del Darro, 24, 0, 18005 Granada
+                  <hr />
+                  <ul>
+                    <li>A 650 m andando de la iglesia</li>
+                    <li>A 1,9 km en coche de la iglesia</li>
+                    <li>
+                      https://www.eurostarshotels.com/eurostars-puerta-real.html?referer_code=lb0gg00yx&utm_source=google&utm_medium=business&utm_campaign=lb0gg00yx
+                    </li>
+                    <li>958521111</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/xouoBu93kUFgT7HDA"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.1805391406383!2d-3.6016809854915417!3d37.172180254372996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd42287b1082c7d1%3A0x3b2270c596d841bd!2sEurostars%20Puerta%20Real!5e0!3m2!1ses!2ses!4v1677673509355!5m2!1ses!2ses"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Villa Oniria</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle San Antón, 28, bajo, 18005 Granada
+                  <hr />
+                  <ul>
+                    <li>A 650 m andando de la iglesia</li>
+                    <li>A 1,1 km en coche de la iglesia</li>
+                    <li>http://www.villaoniria.com/</li>
+                    <li>958535358</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/X1YPwzwVGVqSEv3w6"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.224946447756!2d-3.604055181902928!3d37.171124799499076!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbda5a80ae1%3A0x8857a62aa3dc7653!2sVilla%20Oniria!5e0!3m2!1ses!2ses!4v1677673589672!5m2!1ses!2ses"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Hotel Vincci Albayzín</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Carrera de la Virgen, 48, 18005 Granada
+                  <hr />
+                  <ul>
+                    <li>A 600 m andando de la iglesia</li>
+                    <li>A 1,4 km en coche de la iglesia</li>
+                    <li>https://www.vinccialbayzin.com/</li>
+                    <li>958001920</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/uyWgmyF3mU6xVCp2A"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.280833825875!2d-3.5988077854916614!3d37.16979645450847!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbc43132f9d%3A0x62b9fafaf8ab8b73!2sHotel%20Vincci%20Albayz%C3%ADn%20Granada!5e0!3m2!1ses!2ses!4v1677673667813!5m2!1ses!2ses"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Hotel Barceló Carmen</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle Acera del Darro, 62, 18005 Granada
+                  <hr />
+                  <ul>
+                    <li>A x km de la iglesia</li>
+                    <li>A x km de la finca</li>
+                    <li>
+                      https://www.barcelo.com/es-es/barcelo-carmen-granada/?utm_source=google&utm_medium=organic&utm_campaign=my_business&utm_content=7399
+                    </li>
+                    <li>958258300</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/NhS7YSo8Ja1W374P6"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3028.6685151665856!2d-3.60069435167791!3d37.17067541009113!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbc58f65553%3A0xb5b61d2f26459c35!2sBarcel%C3%B3%20Carmen%20Granada!5e0!3m2!1ses!2ses!4v1677673742105!5m2!1ses!2ses"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Hotel Dauro Premier</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Calle Acera del Darro, 19, 18005 Granada
+                  <hr />
+                  <ul>
+                    <li>A x km de la iglesia</li>
+                    <li>A x km de la finca</li>
+                    <li>http://www.hoteles-dauro.com/</li>
+                    <li>958222157</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/KsV4WPeztT5Nz3kk9"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.292281686155!2d-3.599107324904282!3d37.16952435392905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbc9739e15d%3A0xcaf2f5fdae61deb5!2sHotel%20Premier%20Dauro!5e0!3m2!1ses!2ses!4v1677673815985!5m2!1ses!2ses"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="row justify-content-start m-3">
+            <div
+              class="col-xl-12 col-lg-12 col-md-12 col-sm-12 formulario"
+              style="background-color: beige">
+              <h5 class="ms-5 pt-2">Hotel NH Collection Granada Victoria</h5>
+              <div class="row">
+                <div
+                  class="col-xl-5 col-lg-5 col-md-5 col-sm-5 ms-2 pb-2"
+                  style="word-wrap: break-word">
+                  Prta Real de España, 3, 18005 Granada
+                  <hr />
+                  <ul>
+                    <li>A x km de la iglesia</li>
+                    <li>A x km de la finca</li>
+                    <li>
+                      https://www.nh-hotels.com/hotel/nh-collection-granada-victoria?utm_campaign=local-gmb&utm_medium=organic_search&utm_source=google_gmb
+                    </li>
+                    <li>958536216</li>
+                  </ul>
+
+                  <a
+                    class="btn btn-dark rounded-pill"
+                    href="https://goo.gl/maps/LR66f3DZwsTpvH2DA"
+                    >Cómo llegar</a
+                  >
+                </div>
+
+                <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 pb-5">
+                  <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.1294598598724!2d-3.602027685491495!3d37.17339425430421!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcbe77490b99%3A0xe7fcbf1e389f976d!2sHotel%20NH%20Collection%20Granada%20Victoria!5e0!3m2!1ses!2ses!4v1677673932167!5m2!1ses!2ses"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    width="100%"
+                    height="100%"
+                    style="border-radius: 10px">
+                  </iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+  </body>
+</html>

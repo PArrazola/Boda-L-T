@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>L&T</title>
+
+    <!--link css de boostrap 5.3-->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous" />
+
+    <!--link JS de bootstrap 5.3-->
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"
+      integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3"
+      crossorigin="anonymous"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"
+      integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD"
+      crossorigin="anonymous"></script>
+
+    <!--link hoja estilos css-->
+    <link rel="stylesheet" href="LyTstyles.css" />
+
+    <!--link font awesome-->
+    <script
+      src="https://kit.fontawesome.com/015dbbf443.js"
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <header class="container-fluid text-white fila header">
+      <!--nav bar con dropdown-->
+      <nav class="navbar navbar-expand-lg textbordenav">
+        <div
+          class="container-fluid text-white"
+          style="background-color: rgba(25, 27, 22, 0.9); border-radius: 10px">
+          <!--👋 añadir en el href el mismo id que el div al que quiero moverme👋-->
+          <a class="navbar-brand active boton text-white" href="#historia"
+            >¡Nuestra Boda!</a
+          >
+          <button
+            class="navbar-toggler navbar-dark text-white"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNavDropdown"
+            aria-controls="navbarNavDropdown"
+            aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a
+                  class="nav-link boton text-white"
+                  aria-current="page"
+                  href="#celebración"
+                  >Celebración</a
+                >
+                <!--👋 añadir en el href el mismo id que el div al que quiero moverme👋-->
+              </li>
+              <li class="nav-item">
+                <a class="nav-link boton text-white" href="./regalo.html"
+                  >Regalo</a
+                >
+                <!--👋 añadir en el href el mismo id que el div al que quiero moverme👋-->
+              </li>
+              <li class="nav-item dropdown">
+                <a
+                  class="nav-link dropdown-toggle boton text-white"
+                  href="#"
+                  role="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Encuentra
+                </a>
+                <ul class="dropdown-menu dropmenu">
+                  <li>
+                    <a
+                      class="dropdown-item boton text-white"
+                      style="
+                        background-color: rgba(25, 27, 22, 0.95);
+                        border-radius: 10px;
+                      "
+                      href="alojamiento.html"
+                      target="_blank"
+                      >Alojamiento</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item boton text-white"
+                      style="
+                        background-color: rgba(25, 27, 22, 0.95);
+                        border-radius: 10px;
+                      "
+                      href="peluqueria.html"
+                      target="_blank"
+                      >Peluquería</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      class="dropdown-item text-white"
+                      href="./hostelería.html"
+                      style="
+                        background-color: rgba(25, 27, 22, 0.95);
+                        border-radius: 10px;
+                      "
+                      >Hostelería</a
+                    >
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a
+                  class="btn btn-light rounded-pill"
+                  href="confirma.html"
+                  target="_blank"
+                  >Confirmar Asistencia</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="row">
+        <div class="col-12">
+          <h1 class="parrafocartas">Loreto e Ignacio</h1>
+          <h3 class="parrafocartas">23 de Septiembre de 2023</h3>
+
+          <p class="parrafocartas">
+            Enrique García-Trevijano Nestares <br />
+            Loreto Cabetas García
+          </p>
+          <p class="parrafocartas">
+            Enrique Pinazo Tobes <br />
+            Coro Petit Asumendi
+          </p>
+        </div>
+      </div>
+    </header>
+    <div class="row justify-content-center fila">
+      <div class="col-6 pe-0">
+        <img
+          src="./imagenes/8459563.png"
+          alt="eucalipto"
+          height="100%"
+          width="100%" />
+      </div>
+      <div class="col-6 ps-0">
+        <img
+          src="./imagenes/8459563 copia.png"
+          alt="eucalipto"
+          height="100%"
+          width="100%" />
+      </div>
+    </div>
+    <section
+      class="container-fluid parrafointro justify-content-center"
+      id="historia">
+      <div class="row justify-content-center fila">
+        <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 pt-1 text-white">
+          <h3>¡NOS CASAMOS!</h3>
+        </div>
+      </div>
+      <div class="row justify-content-center fila">
+        <div class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mt-2 pt-2 pb-5">
+          <img
+            src="./imagenes/lytluces copia 2.jpg"
+            alt="Loreto e Ignacio"
+            height="100%"
+            width="100%" />
+          <!--<video
+            src="../LT/imagenes/golf 2023-01-23 170333.800.MP4"
+            width="100%"
+            height="100%"
+            autoplay
+            muted
+            loop
+            controls></video>-->
+        </div>
+        <div
+          class="col-xl-4 col-lg-4 col-md-6 col-sm-6 mt-2 pt-1 pb-2 mb-2 col1">
+          <p>
+            Y como nos gusta a nosotros, no vamos a dejar de celebrar.
+            <br />
+            En esta web encontraréis información útil para organizar el viaje a
+            Granada. <br />
+            Os dejamos alguna recomendación de alojamientos y sitios que
+            visitar, entre otras cosas. <br />Así mismo, nos gustaría que nos
+            ayudéis con los preparativos, rellenando el formulario.
+          </p>
+          <p>¡Os esperamos a todos!</p>
+          <p>¡Gracias por compartir este día con nosotros!</p>
+          <br />
+
+          <p>Loreto e Ignacio</p>
+        </div>
+      </div>
+      <div class="row justify-content-center fila">
+        <div class="col-6 pe-0">
+          <img
+            src="./imagenes/closeup-foto-hermosa-flor-hortensia-serrata-hojas-verdes.png"
+            alt="margaritas"
+            height="90%"
+            width="100%" />
+        </div>
+        <div class="col-6 ps-0">
+          <img
+            src="./imagenes/closeup-foto-hermosa-flor-hortensia-serrata-hojas-verdes.png"
+            alt="margaritas"
+            height="90%"
+            width="100%" />
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid" id="celebración">
+      <div class="row fila pb-4 justify-content-start">
+        <div class="col-10 ms-2 mt-2 pt-2">
+          <h3>¿Vienes a Nuestra Boda?</h3>
+          <p class="ps-2">Aquí tienes toda la información necesaria</p>
+        </div>
+      </div>
+      <div class="row fila justify-content-center pb-4">
+        <div class="col-xl-5 col-lg-5 col-md-10 col-sm-10">
+          <div class="card text-center dropmenu text-white cartaboda">
+            <div class="card-body cartas" style="border-radius: 20px">
+              <h4 class="card-title mt-1">Ceremonia religiosa</h4>
+              <p class="parrafocartas">
+                Iglesia de Santo Domingo de Granada (Parroquia de Santa
+                Ecolástica)
+              </p>
+              <p class="parrafocartas">Pl. de Sto. Domingo, 1, 18009 Granada</p>
+              <p class="parrafocartas" style="font-size: 25px">17.00 horas</p>
+              <button
+                type="button"
+                class="btn btn-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal1">
+                Cómo llegar
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-xl-5 col-lg-5 col-md-10 col-sm-10 mt-1">
+          <div class="card text-center dropmenu text-white cartapreboda">
+            <div class="card-body cartas" style="border-radius: 20px">
+              <h4 class="card-title mt-1">Celebración</h4>
+              <p class="parrafocartas">Cortijo Torre del Rey.</p>
+              <p class="parrafocartas">
+                Carr. Bailén-Motril, Salida 137, 18630 Otura, Granada
+              </p>
+              <p class="parrafocartas" style="font-size: 25px">19.00 horas</p>
+              <br />
+              <button
+                type="button"
+                class="btn btn-dark"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal2">
+                Cómo llegar
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row fila pb-4 justify-content-start">
+        <h4 class="ms-2 mt-3 pt-2 ps-2">Esto te puede interesar</h4>
+        <p class="ms-2 ps-2">Cosas que no te puedes perder de Granada</p>
+        <div
+          class="row justify-content-start pb-4 ms-2 formulario align-items-center cartas">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 ps-2">
+            <img
+              class="pt-2"
+              src="./imagenes/albaicin.jpeg"
+              width="100%"
+              style="border-radius: 20px" />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 mt-2">
+            <h6><b>Barrio del Albaicín de Granada </b></h6>
+            <p>
+              Considerado uno de los lugares con más encanto y belleza de
+              Granada, guarda la esencia de todas las épocas históricas de la
+              ciudad. Pasea por sus callejuelas estrechas y, si tienes tiempo,
+              piérdete por este barrio.
+            </p>
+          </div>
+
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 ps-2">
+            <img
+              class="pt-2"
+              src="./imagenes/aangulobien.jpg"
+              width="100%"
+              style="border-radius: 20px" />
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+            <h6><b>Mirador de San Nicolás</b></h6>
+            <p>
+              Espectaculares vistas hacia la Alhambra y a Sierra Nevada. Os
+              recomendamos subir a conocerlo
+            </p>
+          </div>
+        </div>
+        <div
+          class="row justify-content-start pb-4 ms-2 formulario align-items-center cartas">
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 ps-2">
+            <img
+              class="pt-2"
+              src="./imagenes/aarco.jpg"
+              width="100%"
+              style="border-radius: 20px" />
+          </div>
+          <div class="col-xl-4 col-lg-4 col-md-4 col-sm4">
+            <h6><b>La Alhambra de Granada</b></h6>
+            <p>
+              Una fortaleza con palacios e impresionantes jardines que guarda en
+              cada rincón el lujo y el gusto de los monarcas nazarís. Es una de
+              las obras más impresionantes del patrimonio histórico y artístico
+              español por su extraordinaria belleza y su riqueza.
+              <b>Convendría sacar entrada con tiempo.</b>
+            </p>
+          </div>
+          <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 ps-2">
+            <img
+              class="pt-2"
+              src="./imagenes/catedral.jpg"
+              width="100%"
+              style="border-radius: 20px" />
+          </div>
+          <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2">
+            <h6><b>Catedral de Granada</b></h6>
+            <p>En el centro de Granada, podéis entrar y visitarla.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="pt-3">
+      <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 p-3 ps-5">
+          <h6><b>Contáctanos:</b></h6>
+          <h6>📞 Loreto: +34 600 407 962</h6>
+          <h6>📩 loreto.gtrevijano@gmail.com</h6>
+          <h6>📞 Ignacio: +34 620 334 515</h6>
+          <h6>📩 ipinazo33@gmail.com</h6>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-5 col-sm-5 p-3 ps-5">
+          <h6 class="text-white">
+            <b
+              >¡Comparte con nosotros todas tus fotos y vídeos de nuestra boda
+              en este enlace!</b
+            >
+          </h6>
+          <h6 class="text-white"><b>¡Gracias!</b></h6>
+          <a
+            class="btn btn-dark rounded-pill text-white"
+            href="https://www.dropbox.com/scl/fo/dpf4ltcwvez1i5l7e6iho/h?dl=0&rlkey=u2pteea5w6ys46xa6jy3qqngp"
+            target="_blank"
+            >¡Comparte!</a
+          >
+        </div>
+      </div>
+    </footer>
+
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!--AQUÍ CAMBIO EL TÍTULO-->
+            <h1 class="modal-title fs-5" id="exampleModalLabel">
+              Cómo llegar - Iglesia Santo Domingo de Granada
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <!--AQUÍ PONGO EL CONTENIDO-->
+          <div class="modal-body">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3179.1476701658553!2d-3.5967889854915525!3d37.17296145432876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fcc655995f07%3A0xdf4e62368f080eae!2sIglesia%20de%20Santo%20Domingo%20de%20Granada%20(Parroquia%20de%20Santa%20Escol%C3%A1stica)!5e0!3m2!1ses!2ses!4v1674577312793!5m2!1ses!2ses"
+              width="100%"
+              class="card"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="modal-footer">
+            <a
+              class="btn btn-secondary"
+              href="https://goo.gl/maps/dXnja2LCB36VPXmK7"
+              target="_blank">
+              Ir
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel2"
+      aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <!--AQUÍ CAMBIO EL TÍTULO-->
+            <h1 class="modal-title fs-5" id="exampleModalLabel2">
+              Cómo llegar - Cortijo Torre del Rey
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"></button>
+          </div>
+          <!--AQUÍ PONGO EL CONTENIDO-->
+          <div class="modal-body">
+            <ul>
+              <li>http://torredelrey.com/</li>
+              <li>686942464</li>
+            </ul>
+            <hr />
+            <iframe
+              width="100%"
+              class="card"
+              height="100%"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3182.361641433526!2d-3.6471904!3d37.0965081!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd71fa3eadec804f%3A0xc2c8c5646d282e47!2sTorre%20del%20Rey!5e0!3m2!1ses!2ses!4v1681469862623!5m2!1ses!2ses"
+              width="600"
+              height="450"
+              style="border: 0"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+          <div class="modal-footer">
+            <a
+              class="btn btn-secondary"
+              href="https://goo.gl/maps/dXnja2LCB36VPXmK7"
+              target="_blank">
+              Ir
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
